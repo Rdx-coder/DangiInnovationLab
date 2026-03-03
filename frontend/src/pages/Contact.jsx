@@ -7,9 +7,9 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    interest: 'general',
     subject: '',
-    message: '',
-    interest: 'general'
+    message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -29,9 +29,9 @@ const Contact = () => {
       setFormData({
         name: '',
         email: '',
+        interest: 'general',
         subject: '',
-        message: '',
-        interest: 'general'
+        message: ''
       });
     } catch (error) {
       toast.error("Something went wrong. Please try again.");
